@@ -30,7 +30,7 @@ public class MouseSelecting : MonoBehaviour {
 	void OnMouseEnter(){
 
 		if (!confirmed) {
-			rend.material.SetColor ("_Color", Color.green);
+			rend.material.SetColor ("_Color", Color.yellow);
 		}
 	}
 
@@ -44,7 +44,7 @@ public class MouseSelecting : MonoBehaviour {
 
 
 			//highlight selected object with yellow
-			rend.material.SetColor ("_Color", Color.yellow);
+			rend.material.SetColor ("_Color", Color.green);
 			
 			// get name back what card it is.
 			selection = gameObject.name;
